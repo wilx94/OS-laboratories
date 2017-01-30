@@ -9,7 +9,7 @@ void outputResponse(const char board[][4],char printCase[]);
 int main(void){
 	char printCase[20];
 	char caseText[6] = "Case#";
-	int c;
+	char c;
 	int cases = 1;
 	int col =0;
 	int row = 0; 
