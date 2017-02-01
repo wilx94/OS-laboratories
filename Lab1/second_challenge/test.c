@@ -2,12 +2,17 @@
 #include <string.h>
 
 
+
+int charToInt(char number);
+
+
+
 void main(void){
 	
-	char c = '4';
+	char c;
 	FILE *file;
 
-	int  test = c;
+	
 
 	
 	// if((file = fopen("files/inputs/test.in","r")) == NULL ){	
@@ -30,5 +35,42 @@ void main(void){
 
 	// }
 // }
-	printf("%d\n",test);
+	printf("hola\n");
+	printf("test\n");
+
+
+	file = fopen("files/inputs/test.in","r");
+
+	while((c = getc(file)) != EOF){
+		if(c == '\n'){
+			printf("newline\n");
+		}else{
+			printf("%c - %d\n",c,(int)c);
+		}
+	}
+
+
+
+	int lenWord = strlen(word);
+	int count;
+
+	for(i = 0; i < row; i++){
+		for(j = 0; j < col; j++){
+			for(k = j,count = 0; count < lenWord &&  k < col; k++, count++){
+				if(!(tolower((int)board[i][k]) == tolower((int)word[searchPos]))){
+					break;
+				}else{
+					
+					if(count == lenWord){
+						colIndex = col;
+						rowIndex = row;
+						return;
+					}
+					count++;
+				}
+			}
+		}
+	}
+
 }
+
