@@ -101,6 +101,7 @@ void main(void){
 					}
 					printf("\n");
 				}
+				printf("\n");
 
 
 
@@ -139,6 +140,7 @@ void main(void){
 					printf("%s\n",wordArray[i]);
 
 				}
+				printf("\n");
 
 
 			
